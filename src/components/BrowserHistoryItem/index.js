@@ -18,11 +18,11 @@ const BrowserHistoryItem = props => {
           <p className="domain-name">{domainUrl}</p>
         </div>
       </div>
-      <button testid="delete" type="button" className="delete-button">
+      <button testid="delete" type="button" className="delete-button"  onClick={onDeleteHistory} >
         <img
           src="https://assets.ccbp.in/frontend/react-js/delete-img.png"
           alt="delete"
-          onClick={onDeleteHistory}
+         
         />
       </button>
     </li>
